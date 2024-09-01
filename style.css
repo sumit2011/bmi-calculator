@@ -1,15 +1,15 @@
-body{
-    
+
+
+.container{
     background-color: grey;
-    
 }
+
 
 #bmi-result{
     font-size: 1.7rem;
 }
 
 .row {
-    
     min-height: 90vh;
 }
 
