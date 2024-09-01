@@ -7,7 +7,10 @@ calculateBtn.addEventListener('click' , (event) => {
     const height = document.querySelector('#heightField').value;
     console.log(height);
     console.log(weight);
-
+    // Check if user enter the values or not
+    if(weight === '' || height === '') {
+        return alert('Please enter height and weight both.');
+    }
     const result = weight / (height*height);
 
     let bmiMsg;
@@ -27,7 +30,8 @@ calculateBtn.addEventListener('click' , (event) => {
         bmiMsg = 'Obese';
     }
     
-    bmiresult.innerHTML= `<p id="bmi-result"> BMI = <b>${result}</b> (<span class="${msgColor}"><b>${bmiMsg}</b></span>)</p>`;
+    bmiresult.innerHTML= `<p id="bmi-result"> BMI = <b>${Math.round(result * 100) / 100}</b> (<span class="${msgColor}"><b>${bmiMsg}</b></span>)</p>`;
+
 });
 
 
