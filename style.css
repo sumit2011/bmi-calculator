@@ -11,7 +11,7 @@
 
 .row {
 
-    min-height: 90vh;
+    min-height: 60vh;
 }
 
 .col-10 {
@@ -24,7 +24,7 @@
     
     display: flex;
     justify-content: right;
-    margin-bottom: -150px;
+    margin-bottom: 0px;
     
 }
 
